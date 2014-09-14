@@ -20,3 +20,20 @@ Add this to your base fragments:
     }
 
 ```
+
+And use the following way:
+- To "Jam" information in Shared Preferences at runtime:
+
+``` Java
+@Jam(key = FragmentC.FRAG_C_KEY)
+    public String name;
+```
+
+- And to "UnJam":
+
+```Java
+    public static final String FRAG_C_KEY = "FragCKey";
+
+    @UnJam(key = FRAG_C_KEY)
+    private String value;
+```
