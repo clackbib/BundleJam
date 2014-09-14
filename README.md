@@ -27,6 +27,9 @@ And use the following way:
 ``` Java
     @Jam(key = FragmentC.FRAG_C_KEY)
     public String name;
+    
+    //Modifiy the value of name in your fragment
+    name = "Habib";
 ```
 
 - And to "UnJam":
@@ -36,4 +39,7 @@ And use the following way:
 
     @UnJam(key = FRAG_C_KEY)
     private String value;
+    
+    //Retrieve your saved data
+    tvName.setText(name);
 ```
