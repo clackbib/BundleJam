@@ -25,7 +25,7 @@ And use the following way:
 - To "Jam" information in Shared Preferences at runtime:
 
 ``` Java
-@Jam(key = FragmentC.FRAG_C_KEY)
+    @Jam(key = FragmentC.FRAG_C_KEY)
     public String name;
 ```
 
